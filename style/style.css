@@ -1,0 +1,490 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+
+/*reset 시작*/
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+a:link { color: #333;}
+a:visited { color: #333;}
+a:hover { color: #333;}
+a:active { color: #333;}
+
+
+ul {
+    list-style: none;
+}
+/*reset 끝*/
+
+
+/*body 배경색 지정*/
+body {
+    background-color: #f5f6f7;
+}
+
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 480px;
+    padding: 10px;
+    margin: 0 auto;
+}
+/*div#wrap 끝*/
+
+/*정보입력 div 크기 지정 시작*/
+#wrap div.basicInput {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#wrap div.basicInput h4 {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+div.basicInput>span {
+    width: 460px;
+    padding: 16px 10px;
+    border: 1px solid #c9cdcc;
+    background-color: #fff;
+    display: inline-block;
+}
+
+
+
+/*제목시작*/
+header#header {
+    height: 100px;
+
+}
+
+h1#companylogo {
+    color: #00c850;
+    font-size: 46px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+/*아이디 입력*/
+
+
+#wrap span#memIDArea::after {
+    content: "@naver.com";
+    color: #969ba0;
+}
+
+
+
+#wrap div#memID input {
+    width: 77%;
+    border: none;
+    outline: none;
+}
+/*아이디 입력 끝*/
+
+
+/*비밀번호 입력 시작*/
+
+
+#wrap span#memPWArea {
+    padding-top: 12px;
+    padding-bottom: 19px;
+}
+#wrap span#memPWArea::after {
+    content: "";
+    width: 18px;
+    height: 20px;
+    background-image: url(../images/pw_01.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#wrap span#memPWArea:focus-within {
+/*비밀번호 입력 전체 영역*/
+    border: 1px solid #00c850;
+}
+
+
+#wrap div#memPW input {
+    width: 94%;
+    border: none;
+    outline: none;
+}
+/*비밀번호 입력 끝*/
+
+/*이름 입력 시작*/
+
+#wrap span#memNameArea:focus-within {
+/*비밀번호 입력 전체 영역*/
+    border: 1px solid #00c850;
+}
+
+#wrap div#memName input {
+    width: 98%;
+    border: none;
+    outline: none;
+}
+/*이름 입력 끝*/
+
+
+/*생년월일 입력 시작*/
+/*레이아웃 시작*/
+#wrap div.basicBirthInput {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#wrap div.basicBirthInput h4 {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+div.basicBirthInput>span {
+    width: 146px;
+    padding: 16px 10px;
+    border: 1px solid #c9cdcc;
+    background-color: #fff;
+    display: inline-block;
+}
+
+div.basicBirthInput>span:nth-child(2),
+div.basicBirthInput>span:nth-child(3) {
+    margin-right: 5px;
+}
+
+#wrap span.inputBirthArea:focus-within {
+/*비밀번호 입력 전체 영역*/
+    border: 1px solid #00c850;
+}
+
+#wrap div#memBirth input {
+    width: 98%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+/*레이아웃 끝*/
+
+
+#wrap div#memBirth select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+    -webkit-appearance: none;
+/*  크롭브라우저에서 펄침 아이콘 제거*/
+
+    background-image: url(../images/downArrow_01.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#wrap div#memBirth select::-ms-expand {
+    display : none;
+    /* ie브라우저에서 펄침 아이콘 제거*/
+}
+
+#wrap div#memBirth option {
+    font-size: 15px;
+}
+/*생년월일 입력 끝*/
+
+
+
+
+/*휴대전화 입력 시작*/
+#wrap #memPhone {
+    margin-bottom: 20px;
+}
+#wrap #memPhone h4 {
+    margin-bottom: 7px;
+}
+
+#wrap #memPhone span#nationalNo {
+    width: 460px;
+    padding: 16px 10px;
+    border: 1px solid #c9cdcc;
+    background-color: #fff;
+
+    display: inline-block;
+}
+
+
+#wrap #memPhone span#nationalNo:focus-within {
+/*비밀번호 입력 전체 영역*/
+    border: 1px solid #00c850;
+}
+
+#wrap div#memPhone span#nationalNo select {
+    width: 100%;
+    border: none;
+    outline: none;
+
+        -webkit-appearance: none;
+/*  크롭브라우저에서 펄침 아이콘 제거*/
+
+    background-image: url(../images/downArrow_01.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#wrap #memPhone span#memPhoneArea {
+    width: 340px;
+    padding: 15px 10px;
+    border: 1px solid #c9cdcc;
+    background-color: #fff;
+    margin-right: 4px;
+
+
+    display: inline-block;
+}
+
+#wrap #memPhone span#memPhoneArea:focus-within {
+    border: 1px solid #00c850;
+}
+#wrap #memPhone span#memPhoneArea input {
+    width: 99%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+#wrap #memPhone span#autNoBtn {
+
+    display: inline-block;
+}
+#wrap #memPhone span#autNoBtn>a {
+    width: 110px;
+    height: 53px;
+    text-align: center;
+    line-height: 54px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #00c850;
+
+    display: inline-block;
+}
+
+#wrap #memPhone span#inAutNo {
+    width: 460px;
+    padding: 15px 10px;
+    border: 1px solid #c9cdcc;
+    background-color: #f5f6f7;
+
+
+    display: inline-block;
+}
+
+#wrap #memPhone span#inAutNo input {
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+#wrap #memPhone span {
+    margin-bottom: 8px;
+}
+/*휴대전화 입력 끝*/
+
+/*가입하기 시작*/
+#wrap #submitArea {
+    margin-bottom: 40px;
+}
+#wrap #submitArea span#joinBtn {
+    width: 460px;
+    padding: 0;
+}
+#wrap #submitArea span#joinBtn>a {
+    width: 460px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    font-size: 16px;
+
+    display: inline-block;
+    background-color: #00c850;
+}
+/*가입하기 끝*/
+/*정보입력 div 크기 지정 끝*/
+
+
+
+
+/*footer#footer 시작*/
+nav#footerLnb {
+    width: 460px;
+/*    border: 1px solid #000;*/
+    padding-left: 10px;
+    margin: 0 auto;
+
+}
+
+nav#footerLnb>ul>li {
+    float: left;
+/*    border: 1px solid #000;*/
+}
+
+nav#footerLnb>ul>li:not(:last-child)::after{
+    content: "|";
+    color: #c9cdcc;
+    width: 18px;
+    height: 10px;
+    line-height: 20px;
+    font-size: 10px;
+    margin-left: 1px;
+    position: relative;
+    top: -2px;
+    text-align: center;
+    display: inline-block;
+}
+nav#footerLnb>ul>li>a {
+    color: #807f7f;
+    font-size: 12px;
+
+
+}
+
+#footer>#copyright {
+    color: #807f7f;
+    text-align: center;
+    padding-top: 6px;
+    clear: both;
+}
+
+nav#footerLnb>ul>li.defaulSelect>a {
+    color: #434343;
+    font-weight: bold;
+    font-size: 13px;
+}
+/*footer#footer 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
